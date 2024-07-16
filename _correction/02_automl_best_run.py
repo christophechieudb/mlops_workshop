@@ -31,6 +31,14 @@
 # MAGIC - To reproduce these results, attach this notebook to a cluster with runtime version **15.3.x-cpu-ml-scala2.12**, and rerun it.
 # MAGIC - Compare trials in the [MLflow experiment](#mlflow/experiments/xxx).
 # MAGIC - Clone this notebook into your project folder by selecting **File > Clone** in the notebook toolbar.
+# MAGIC
+# MAGIC
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ##Correction LAB: 
+# MAGIC Use the following [document, starting at Tracking the best performing training run](https://www.databricks.com/blog/2020/02/18/how-to-display-model-metrics-in-dashboards-using-the-mlflow-search-api.html) to fill the different empty fields
 
 # COMMAND ----------
 

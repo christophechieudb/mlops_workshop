@@ -40,7 +40,8 @@ import databricks.automl_runtime
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC LAB: Let's get some information about the different experiments happened when we launched AutoML in 01_feature_engineering
+# MAGIC ##LAB: 
+# MAGIC Let's get some information about the different experiments happened when we launched AutoML in 01_feature_engineering
 # MAGIC Launch the following command and compare with what you see in the UI on the right
 
 # COMMAND ----------
@@ -53,7 +54,8 @@ print(xp.experiment_id)
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC LAB: Use the following [document, starting at Tracking the best performing training run](https://www.databricks.com/blog/2020/02/18/how-to-display-model-metrics-in-dashboards-using-the-mlflow-search-api.html) to fill the different empty fields
+# MAGIC ##LAB: 
+# MAGIC Use the following [document, starting at Tracking the best performing training run](https://www.databricks.com/blog/2020/02/18/how-to-display-model-metrics-in-dashboards-using-the-mlflow-search-api.html) to fill the different empty fields
 
 # COMMAND ----------
 
