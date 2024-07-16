@@ -98,12 +98,6 @@ from mlflow import MlflowClient
 
 client = MlflowClient()
 
-# The main model description, typically done once.
-client.update_registered_model(
-  name=model_details.name,
-  description="This model predicts whether a customer will churn using the features in the mlops_churn_training table. It is used to power the Telco Churn Dashboard in DB SQL.",
-)
-
 # COMMAND ----------
 
 # MAGIC %md
@@ -133,13 +127,15 @@ client.set_model_version_tag(
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ##LAB: 
+# MAGIC ##Correction LAB: 
 # MAGIC Now you would like to add a description first to make the model more comprehensible. Set the description using [update_registered_model](https://docs.databricks.com/en/machine-learning/manage-model-lifecycle/index.html#annotate-a-model-or-model-version-using-the-api)
 
 # COMMAND ----------
 
+# The main model description, typically done once.
 client.update_registered_model(
-  /*TO FILL*/
+  name=model_details.name,
+  description="This model predicts whether a customer will churn using the features in the mlops_churn_training table. It is used to power the Telco Churn Dashboard in DB SQL.",
 )
 
 # COMMAND ----------
