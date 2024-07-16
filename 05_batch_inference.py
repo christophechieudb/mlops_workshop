@@ -41,6 +41,12 @@
 
 # COMMAND ----------
 
+# MAGIC %md 
+# MAGIC Download Artifact requirements.txt
+# MAGIC This is useful for ensuring that the environment has the necessary dependencies to run the model by downloading and installing them from the requirements.txt file.
+
+# COMMAND ----------
+
 from mlflow.store.artifact.models_artifact_repo import ModelsArtifactRepository
 
 requirements_path = ModelsArtifactRepository(f"models:/{catalog}.{schema}.mlops_churn@Champion").download_artifacts(artifact_path="requirements.txt") # download model from remote registry
